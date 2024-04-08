@@ -29,7 +29,6 @@ ALLOWED_HOSTS = ['ytritravel.herokuapp.com','ytritravel-1307a7f8ec15.herokuapp.c
 
 CORS_ALLOW_CREDENTIALS = True
 
-APPEND_SLASH = False
 
 SITE_URL='http://localhost:5173/'
 
@@ -148,7 +147,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,  'dist', 'assets'),
+    os.path.join(BASE_DIR,  'dist/assets'),
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
