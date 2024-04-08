@@ -80,11 +80,11 @@ CORS_ALLOWED_ORIGINS = ['http://localhost:5173']
 
 ROOT_URLCONF = 'travels.urls'
 
-TEMPLATES = [
+TEMPLATES = [    
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            os.path.join(BASE_DIR, 'dist')],
+           os.path.join(BASE_DIR, 'static', 'dist')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -148,7 +148,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'dist'),
+    os.path.join(BASE_DIR, 'static', 'dist'),
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
