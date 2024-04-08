@@ -148,7 +148,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-     os.path.join(BASE_DIR, 'Kizi/dist/static'),
+    os.path.join(BASE_DIR,  'dist/assets/'),
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
