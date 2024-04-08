@@ -23,12 +23,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-qd=3%t+6&f78l2ho#d-^=yrv!%6t91na39u+%9@_ftpa$gliz-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['ytritravel.herokuapp.com','ytritravel-1307a7f8ec15.herokuapp.com']
 
 CORS_ALLOW_CREDENTIALS = True
 
+APPEND_SLASH = True
 
 SITE_URL='http://localhost:5173/'
 
@@ -147,7 +148,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR,  'dist/assets'),
+    os.path.join(BASE_DIR,  'dist', 'assets'),
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
