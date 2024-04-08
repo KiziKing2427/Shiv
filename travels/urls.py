@@ -14,6 +14,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
     path('api/', include('ytriTravel.urls')),  
+    path('home/', TemplateView.as_view(template_name='home.html')),
     re_path('.*', TemplateView.as_view(template_name='index.html'))
 ]
 
