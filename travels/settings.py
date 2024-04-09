@@ -25,11 +25,11 @@ SECRET_KEY = 'django-insecure-qd=3%t+6&f78l2ho#d-^=yrv!%6t91na39u+%9@_ftpa$gliz-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ytritravel.herokuapp.com','ytritravel-3b8546e68556.herokuapp.com']
+ALLOWED_HOSTS = ['http://127.0.0.1:8000', '127.0.0.1']
 
 CORS_ALLOW_CREDENTIALS = True
 
-APPEND_SLASH = True
+APPEND_SLASH = False
 
 SITE_URL='http://localhost:5173/'
 
@@ -80,11 +80,11 @@ CORS_ALLOWED_ORIGINS = ['http://localhost:5173']
 
 ROOT_URLCONF = 'travels.urls'
 
-TEMPLATES = [    
+TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-           os.path.join(BASE_DIR, 'static/dist')],
+            os.path.join(BASE_DIR, 'dist')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -148,7 +148,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, ''),
+    os.path.join(BASE_DIR,  'dist', 'assets'),
 ]
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
