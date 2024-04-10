@@ -25,11 +25,11 @@ SECRET_KEY = 'django-insecure-qd=3%t+6&f78l2ho#d-^=yrv!%6t91na39u+%9@_ftpa$gliz-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['git.heroku.com/ytritravel.git','ytritravel-367869363b28.herokuapp.com']
+ALLOWED_HOSTS = ['ytritravel-367869363b28.herokuapp.com']
 
 CORS_ALLOW_CREDENTIALS = True
 
-APPEND_SLASH = False
+APPEND_SLASH = True
 
 SITE_URL='http://localhost:5173/'
 
@@ -82,7 +82,7 @@ ROOT_URLCONF = 'travels.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'dist')],  # Add this line to specify the directory for your templates
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
