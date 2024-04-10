@@ -82,7 +82,6 @@ ROOT_URLCONF = 'travels.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'dist')],  # Add this line to specify the directory for your templates
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -94,6 +93,7 @@ TEMPLATES = [
         },
     },
 ]
+
 
 WSGI_APPLICATION = 'travels.wsgi.application'
 
@@ -148,7 +148,7 @@ STATIC_URL = '/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'frontend', 'dist'),  # Adjust path to your Vite build directory
+    os.path.join(BASE_DIR, 'frontend/dist'),  # Adjust path to your Vite build directory
 ]
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
