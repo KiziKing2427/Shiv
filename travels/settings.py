@@ -148,7 +148,7 @@ STATIC_URL = '/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static/temp'),  # Adjust path to your Vite build directory
+    os.path.join(BASE_DIR, 'static/dist'),  # Adjust path to your Vite build directory
 ]
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
