@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-qd=3%t+6&f78l2ho#d-^=yrv!%6t91na39u+%9@_ftpa$gliz-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['ytritravel-367869363b28.herokuapp.com']
+ALLOWED_HOSTS = ['https://ytritravel-367869363b28.herokuapp.com/','ytritravel-367869363b28.herokuapp.com']
 
 CORS_ALLOW_CREDENTIALS = True
 
@@ -148,7 +148,7 @@ STATIC_URL = '/static/'
 
 # Additional locations of static files
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'frontend', 'dist', 'assets'),  # Adjust path to your Vite build directory
+    os.path.join(BASE_DIR, 'frontend', 'dist'),  # Adjust path to your Vite build directory
 ]
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
