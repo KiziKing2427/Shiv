@@ -30,7 +30,7 @@ ALLOWED_HOSTS = ['ytribackend-7af9191039f2.herokuapp.com']
 
 CORS_ALLOW_CREDENTIALS = True
 
-APPEND_SLASH = True
+APPEND_SLASH = False
 
 SITE_URL='http://localhost:5173/'
 
