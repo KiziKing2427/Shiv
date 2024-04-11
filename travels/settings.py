@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-qd=3%t+6&f78l2ho#d-^=yrv!%6t91na39u+%9@_ftpa$gliz-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['']
+ALLOWED_HOSTS = ['ytribackend-7af9191039f2.herokuapp.com']
 
 CORS_ALLOW_CREDENTIALS = True
 
