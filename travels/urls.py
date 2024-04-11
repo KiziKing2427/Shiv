@@ -14,7 +14,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('api/', include(router.urls)),
     path('api/', include('ytriTravel.urls')),  # Add this line to include the other URLs
-    re_path(r'^.*$', TemplateView.as_view(template_name='index.html')),
+    re_path(r'^.*$', TemplateView.as_view(template_name='dist/index.html')),
 ]
 
 if settings.DEBUG:
