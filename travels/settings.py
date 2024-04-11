@@ -77,7 +77,9 @@ REST_FRAMEWORK = {
     'rest_framework.permissions.AllowAny',
     ],
 }
-CORS_ALLOWED_ORIGINS = ['https://your-react-frontend.herokuapp.com']
+CORS_ALLOWED_ORIGINS = [
+    'https://ytrifrontend-516983977383.herokuapp.com/'
+]
 
 ROOT_URLCONF = 'travels.urls'
 
