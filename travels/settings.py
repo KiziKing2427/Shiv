@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-qd=3%t+6&f78l2ho#d-^=yrv!%6t91na39u+%9@_ftpa$gliz-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['ytritravel-367869363b28.herokuapp.com']
+ALLOWED_HOSTS = ['']
 
 CORS_ALLOW_CREDENTIALS = True
 
@@ -147,20 +147,6 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
-
-# Additional locations of static files
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'static/temp'),  # Adjust path to your Vite build directory
-]
-
-STATIC_ROOT = BASE_DIR / 'staticfiles'
-
-# Configure Django to serve the index.html file of your React app
-# This will catch all routes not defined in Django's urls.py and serve the React app
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
-# Add the React build directory to the TEMPLATES 'DIRS' setting
-TEMPLATES[0]['DIRS'] = [os.path.join(BASE_DIR, 'frontend', 'dist')]
 
 MEDIA_URL = '/media/'
 
