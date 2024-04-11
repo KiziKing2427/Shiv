@@ -103,8 +103,10 @@ WSGI_APPLICATION = 'travels.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'ytri',
+        'USER': 'kizi',
+        'PASSWORD': 'Courage_2427123',
     }
 }
 
