@@ -30,7 +30,7 @@ ALLOWED_HOSTS = ['ytribackend-7af9191039f2.herokuapp.com']
 
 CORS_ALLOW_CREDENTIALS = True
 
-APPEND_SLASH = False
+APPEND_SLASH = True
 
 SITE_URL='http://localhost:5173/'
 
@@ -103,9 +103,13 @@ WSGI_APPLICATION = 'travels.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
-# Update database configuration from DATABASE_URL environment variable
 DATABASES = {
-    'default': dj_database_url.config(conn_max_age=600, ssl_require=True)
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'ytri',
+        'USER': 'kizi',
+        'PASSWORD': 'Courage_2427123',
+    }
 }
 
 
